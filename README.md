@@ -1,4 +1,5 @@
-1. 目录结构
+#### 1. 目录结构
+```
    ----dist 打包发布由 webpack 自动生成该目录，无需上传到 git 上
    ----network 网络请求
    ----node_modules
@@ -14,6 +15,7 @@
    ----tsconfig.json typescript 配置文件
    ----.babelrc babel 转换 ES6 语法的配置文件
    ----.gitignore git 忽略文件
+```
 
 支持：
 
@@ -26,7 +28,7 @@
 6. development 下开启 inline-source-map
 ```
 
-2. 命令
+#### 2. 命令
    2.1 本地调试：
 
 ```
