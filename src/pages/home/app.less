@@ -1,0 +1,89 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: 100vh;
+  background: white;
+  padding: 16px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 16px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  .user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    & img {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+    }
+    & span {
+      font-size: 18px;
+      color: black;
+      font-weight: bold;
+      align-self: flex-start;
+      margin-left: 10px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin-top: 4px;
+    }
+  }
+  .money {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      & span:nth-child(1) {
+        color: black;
+        font-size: 14px;
+      }
+      & span:last-child {
+        color: #fed62b;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      &:nth-child(1):after {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 2px;
+        display: block;
+        content: '';
+        background: red;
+      }
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(135deg, red, blue);
+  cursor: pointer;
+  align-self: center;
+  margin-top: 30px;
+}

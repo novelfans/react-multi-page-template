@@ -1,0 +1,39 @@
+.page {
+  background: url('./assets/images/bind_bg.jpeg');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  & span {
+    margin-bottom: 10px;
+  }
+  & span:nth-child(2) {
+    color: black;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  & span:nth-child(3) {
+    color: #908f8f;
+    font-size: 14px;
+  }
+  & a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 90%;
+    background: #fed62b;
+    border-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
