@@ -34,7 +34,7 @@ const devServer = () => {
       hot: true,
       open: true,
       inline: true,
-      host: getLocalIP(),
+      useLocalIp:true,
       openPage: 'pages/home'
     }
   } else {
